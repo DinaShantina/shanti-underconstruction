@@ -1,11 +1,21 @@
+body {
+  margin:0;
+}
 .App-header {
   margin: 0;
   background-image: url('https://images.pexels.com/photos/1170184/pexels-photo-1170184.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(../images/logo2.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
 }
 
 .bg-body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: 'Roboto', sans-serif;
   width: 60%;
   margin:0;
@@ -36,6 +46,11 @@
   font-size: 40px;
   color: #582C83;
 }
+.contact-shanti {
+  color: #582C83;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 .location {
   margin: 0;
@@ -62,6 +77,23 @@
   color: #61dafb;
 }
 
+.mapa {
+  width: 300px;
+  height:250px;
+
+}
+.booking {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .bg-maps {
+  background-image: url(../images/logo2.png);
+  background-size:cover;
+  background-repeat: repeat;
+  
+} */
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -69,4 +101,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+@media only screen and (max-width: 426px) {
+
+  .bg-body {
+    width: 85%;
+  }
+
+}
+
+@media screen and (max-width: 321px) {
+  .mapa {
+    width: 250px;
+    height:250px;
+  
+  }
+  
 }
